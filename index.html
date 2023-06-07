@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <meta name="author" content="Ramiro Garza">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,600;0,700;1,400&family=VT323&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/29d2b3dbcb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        The public book database 📚
+        <button class="add">Add a book</button>
+    </header>
+    <div class="content">
+        <div class="book-container" href="https://edit.org/images/cat/book-covers-big-2019101610.jpg" target="_blank"
+            rel="noreferrer noopener">
+            <div class="book">
+                <div class="info">Example Book</div>
+            </div>
+            <div class="author"><strong>By John Apple</strong></div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>
+            Made by
+            <strong id="author">
+                @garrza
+            </strong>
+            <script>
+                document.write(new Date().getFullYear())
+            </script>
+        </p>
+        <a href="https://github.com/garrza" target="_blank">
+            <i class="fab fa-github" style="color: #9368B7"></i></a>
+    </footer>
+</body>
+
+</html>

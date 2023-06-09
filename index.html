@@ -14,19 +14,18 @@
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/29d2b3dbcb.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <script src="script" defer></script>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
     <header class="header">
         The public book database 📚
-        <button class="add">Add a book</button>
+        <button class="add" id="addButton">Add a book</button>
     </header>
-    <div class="content">
-        <div class="book-container" href="https://edit.org/images/cat/book-covers-big-2019101610.jpg" target="_blank"
-            rel="noreferrer noopener">
+    <div class="content" id="content">
+        <div class="book-container">
             <div class="book">
-                <div class="info">Example Book</div>
+                <div class="title">Example Book</div>
             </div>
             <div class="author"><strong>By John Apple</strong></div>
         </div>

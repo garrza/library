@@ -156,14 +156,14 @@ body {
     width: 200px;
     height: 300px;
     transform: translateZ(-25px);
-    background-color: var(--main-color);
+    background-color: var(--main-light);
     border-radius: 0 2px 2px 0;
     box-shadow: -10px 0 50px 10px #666;
 }
 
 
 .title {
-    font-size: 3rem;
+    font-size: 150%;
     color: antiquewhite;
     display: flex;
     flex-direction: column;
@@ -173,7 +173,7 @@ body {
 }
 
 .author {
-    color: var(--main-color);
+    color: var(--main-color);;
 }
 
 /* --- --- --- --- --- FOOTER --- --- --- --- --- --- */

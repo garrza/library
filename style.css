@@ -42,6 +42,8 @@ body {
 }
 
 .add {
+    font: inherit;
+    font-size: 1rem;
     margin-top: 2rem;
     padding: 1.5rem;
     color: #efebe0;
@@ -57,6 +59,110 @@ body {
 }
 
 /* --- --- --- --- --- CONTAINER --- --- --- --- --- --- */
+
+input {
+    padding: 1rem;
+}
+input#title {
+    height: 30px;
+    width: 200px;
+    font-size: 20px;
+    border: solid 2px var(--main-dark);
+}
+
+input#author {
+    height: 30px;
+    width: 200px;
+    font-size: 20px;
+    border: solid 2px var(--main-dark);
+}
+
+input#pages {
+    height: 30px;
+    width: 200px;
+    font-size: 20px;
+    border: solid 2px var(--main-dark);
+}
+
+input#color {
+    height: 30px;
+    width: 200px;
+    font-size: 20px;
+    border: solid 2px var(--main-dark);
+}
+
+input[type=checkbox] {
+    transform: scale(1);
+}
+
+#popUp {
+
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    font-size: 30px;
+}
+
+/* Modal Content/Box */
+#form {
+    position: relative;
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: max(30%, 300px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: var(--main-dark);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#addBtn {
+    color: #efebe0;
+    border: none;
+    outline: none;
+    background: var(--accent);
+    cursor: pointer;
+    width: 60%;
+    padding: 1rem;
+}
+
+form > .close {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+}
 
 /* 3D books using pure CSS, credits to @scastiel */
 
@@ -173,7 +279,12 @@ body {
 }
 
 .author {
-    color: var(--main-color);;
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.author:hover {
+    color: calc(var(--main-color) + 5%)
 }
 
 /* --- --- --- --- --- FOOTER --- --- --- --- --- --- */

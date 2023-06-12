@@ -21,15 +21,25 @@
 <body>
     <header class="header">
         The public book database 📚
-        <button class="add" id="addButton">Add a book</button>
+        <button class="add">Add Book</button>
+        <div id="popUp">
+            <form id="form" action="/script.js">
+                <span class="close">&times;</span>
+                <legend>Add Book</legend>
+                <div id="textInput">
+                    <p><input type="text" id="title" name="title" placeholder="Title*" required></p>
+                    <p><input type="text" id="author" name="author" placeholder="Author*" required></p>
+                    <p><input type="text" id="pages" name="pages" placeholder="Pages*" required></p>
+                    <p><input type="text" id="color" name="color" placeholder="Color*" required></p>
+                </div>
+                <div id="checkBox">
+                    <p><label>Read: </label><input type="checkbox" id="read" name="read" value="yes"></p>
+                </div>
+                <button type="submit" form="form" id="addBtn">Add</button>
+            </form>
+        </div>
     </header>
     <div class="content" id="content">
-        <div class="book-container">
-            <div class="book">
-                <div class="title">Example Book</div>
-            </div>
-            <div class="author"><strong>By John Apple</strong></div>
-        </div>
     </div>
     <footer class="footer">
         <p>
